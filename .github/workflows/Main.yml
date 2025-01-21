@@ -41,7 +41,7 @@ jobs:
           curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
       - name: start build
-        run:
+        run: |
           source /opt/ros/humble/setup.bash
           ./build.sh
 
