@@ -43,6 +43,7 @@ jobs:
       - name: Install dependencies for build
         run: |
           sudo apt install libacl1-dev curl libssl-dev -y
+          python3 -m pip install empy
 
       - name: start build
         shell: bash
