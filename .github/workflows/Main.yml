@@ -36,6 +36,19 @@ jobs:
       - name: Set up ROS 2
         uses: ros-tooling/setup-ros@v0.7
         with:
-          use-ros2-testing: false
           required-ros-distributions: humble
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run:
+          apt install libacl1-dev curl libssl-dev -y
+          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+      - name: start build
+        run:
+          ./build.sh
 
