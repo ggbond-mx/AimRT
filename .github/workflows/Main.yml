@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     # 指定官方 runner
-    runs-on: ubuntu-latest    # 可选择的官方 runner
+    runs-on: ubuntu-22.04    # 可选择的官方 runner
 
     steps:
       - name: Run a test
