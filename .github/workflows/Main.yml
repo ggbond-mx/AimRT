@@ -36,7 +36,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies for build
-        run:
+        run: |
           sudo apt install libacl1-dev curl libssl-dev -y
           curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
