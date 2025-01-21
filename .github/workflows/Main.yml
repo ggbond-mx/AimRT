@@ -45,6 +45,7 @@ jobs:
           sudo apt install libacl1-dev curl libssl-dev -y
 
       - name: start build
+        shell: bash
         run: |
           source /opt/ros/humble/setup.bash
           ./build.sh
