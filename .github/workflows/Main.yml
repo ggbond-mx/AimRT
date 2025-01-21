@@ -25,10 +25,6 @@ jobs:
       - name: Use cmake
         run: cmake --version
 
-      - name: Use gcc
-        run: gcc --version
-
-
       - name: Set up ROS 2
         uses: ros-tooling/setup-ros@v0.7
         with:
